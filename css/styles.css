@@ -1,0 +1,59 @@
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.indexHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: rgb(255, 188, 88);
+}
+
+.indexLogo {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.indexLogo img {
+    width: 100px;
+}
+
+.indexUtilidades ul {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.indexUtilidades ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.indexMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.indexMainHeadline {
+    color: black;
+}
+
+.indexRecepieContainer {
+    color: black;
+}
+
+.indexFooter {
+    display: flex;
+    justify-content: center;
+    
+    color: black;
+    background-color: rgb(255, 188, 88);
+}
