@@ -47,7 +47,39 @@
 }
 
 .indexRecepieContainer {
+    display: flex;
     color: black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.indexRecepieContainer article {
+    display: flex;
+    border-radius: 20px;
+    width: 200px;
+    background-color: rgb(255, 188, 88);
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.indexRecepieContainer article img {
+    width: 100px;
+    border-radius: 5px;
+    padding: 10px 0px;
+}
+
+.indexRecepieContainer article a {
+    text-decoration: none;
+    color: black;
+}
+
+.indexRecepieContainer article p {
+    padding: 5px 0px;
 }
 
 .indexFooter {
