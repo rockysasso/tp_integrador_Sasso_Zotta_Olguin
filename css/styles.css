@@ -89,3 +89,17 @@
     color: black;
     background-color: rgb(255, 188, 88);
 }
+.botonCargarmas{
+
+    background-color: rgb(255, 188, 88);
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 20px;
+        
+      }
