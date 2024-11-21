@@ -4,6 +4,12 @@
     padding: 0px;
 }
 
+h1, h2, h3, h4, p, a {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .indexHeader {
     display: flex;
     flex-direction: row;
@@ -23,6 +29,10 @@
     width: 100px;
 }
 
+.indexUtilidadesHamburguer {
+    display: none;
+}
+
 .indexUtilidades ul {
     display: flex;
     flex-direction: row;
@@ -40,6 +50,7 @@
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
+    gap: 20px;
 }
 
 .indexMainHeadline {
@@ -69,7 +80,7 @@
 
 .indexRecepieContainer article img {
     width: 100px;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 10px 0px;
 }
 
@@ -79,6 +90,8 @@
 }
 
 .indexRecepieContainer article p {
+    text-decoration: none;
+    color: black;
     padding: 5px 0px;
 }
 
@@ -89,17 +102,32 @@
     color: black;
     background-color: rgb(255, 188, 88);
 }
-.botonCargarmas{
 
+.botonCargarmas{
     background-color: rgb(255, 188, 88);
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        border-radius: 20px;
-        
-      }
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 20px;
+}
+
+@media (max-width: 720px) {
+
+    .indexUtilidadesHamburguer {
+        display: block;
+    }
+
+
+    .indexUtilidadesHamburguer img {
+        width: 60px;
+    }
+
+    .indexUtilidades ul li {
+        display: none;
+    }
+}
