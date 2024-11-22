@@ -4,7 +4,7 @@
     padding: 0px;
 }
 
-h1, h2, h3, h4, p, a {
+h1, h2, h3, h4, label, p, a {
     font-family: "Kanit", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -16,7 +16,7 @@ h1, h2, h3, h4, p, a {
     justify-content: space-around;
     align-items: center;
 
-    background-color: rgb(255, 188, 88);
+    background-color: #6F9283;
 }
 
 .indexLogo {
@@ -51,6 +51,8 @@ h1, h2, h3, h4, p, a {
     align-items: center;
     padding-top: 20px;
     gap: 20px;
+
+    background-color: rgba(207, 207, 207, 0.779);
 }
 
 .indexMainHeadline {
@@ -69,7 +71,7 @@ h1, h2, h3, h4, p, a {
     display: flex;
     border-radius: 20px;
     width: 200px;
-    background-color: rgb(255, 188, 88);
+    background-color: #6F9283;
     flex-wrap: wrap;
     align-content: center;
     align-items: center;
@@ -84,7 +86,7 @@ h1, h2, h3, h4, p, a {
     padding: 10px 0px;
 }
 
-.indexRecepieContainer article a {
+.indexRecepieContainer a {
     text-decoration: none;
     color: black;
 }
@@ -100,11 +102,11 @@ h1, h2, h3, h4, p, a {
     justify-content: center;
     
     color: black;
-    background-color: rgb(255, 188, 88);
+    background-color: #6F9283;
 }
 
 .botonCargarmas{
-    background-color: rgb(255, 188, 88);
+    background-color: #6F9283;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -116,12 +118,92 @@ h1, h2, h3, h4, p, a {
     border-radius: 20px;
 }
 
+
+
+.formularioPrincipal {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.formularioAcceso {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: #C2BEBE;
+    padding-right: 5%;
+    padding-left: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin: 5%;
+    gap: 10px;
+    border-radius: 3%;
+    border: 2px solid #463a30;
+    background-color: #6F9283;
+}
+
+.formularioAcceso div {
+    margin-bottom: 5%;
+}
+
+.terminos {
+    color: #463a30;
+}
+
+.enlaceRegistro {
+    color: #463a30;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#correo, #clave, #terminos {
+    background: transparent;
+    border: 1px solid #463a30;
+    border-radius: 5px; 
+    padding: 10px; 
+}
+
+input::placeholder {
+    color: #463a30;
+    font-size: smaller;
+}
+
+.botonAcceso {
+    background-color:rgb(140, 159, 160);
+}
+
+.tituloAcceso {
+    color: white;
+    font-size: xx-large;
+    margin-bottom: 8%;
+}
+
+.terminos {
+    color: white;
+}
+
+.enlaceRegistro {
+    color: white;
+}
+
+#correo, #clave, #terminos {
+    background: transparent;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+}
+.piePagina {
+    color: black;
+    background-color: #6F9283;
+    text-align: center;
+    padding: 10px;
+}
 @media (max-width: 720px) {
 
     .indexUtilidadesHamburguer {
         display: block;
     }
-
 
     .indexUtilidadesHamburguer img {
         width: 60px;
@@ -130,4 +212,36 @@ h1, h2, h3, h4, p, a {
     .indexUtilidades ul li {
         display: none;
     }
+}
+.detalleReceta{
+
+    
+    background-color: rgb(255, 188, 88);
+    height: 100%;
+    
+}
+.detalleReceta h2{
+    text-align: left;
+    margin-left: 30px;
+}
+
+.detalleReceta img {
+    width: 100%;
+    height: 300px;
+}
+.contenedorReceta{
+width: 50%;
+height: 500px;
+border-style: solid;
+border-width: 3px;
+border-color: black;
+margin-top: 10%;
+}
+.mainReceta{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    
 }

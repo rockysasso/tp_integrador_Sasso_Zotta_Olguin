@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-    <title>Index</title>
+    <title>Register</title>
 </head>
 <body>
     <header class="indexHeader">
@@ -18,7 +18,7 @@
             <h3>Digital Foods</h3>
         </section>
         <form method= "get" class="search-form" action="./search-results.html">
-            <input type="text" name="buscador" id="buscador" class="search-form" placeholder="Escribe tu busqueda: ">
+            <input type="text" name="buscador" id="buscador" class="search-form">
             <button type="submit" class="message-error">ENVIAR</button>
         </form> 
 
@@ -43,21 +43,33 @@
         </section>
     </header>
 
-    <main class="indexMain">
-        <section class="indexMainHeadline">
-            <h2>Todas tus recetas favoritas en un lugar!</h2>
-        </section>
+    <main class="formularioPrincipal">
+        <form class="formularioAcceso" action="../home.html" method="get">
 
-        <section class="indexRecepieContainer">
-           
-        </section>
+            <h1 class="tituloAcceso">Registrate</h1>
 
-        <section>
-            <button class="botonCargarmas">Cargar Mas</button>
-        </section>
+            <div>
+                <input type="email" name="correoUsuario" id="correo" value="" placeholder="Correo electrónico">
+            </div>
+
+            <div>
+                <input type="password" name="claveUsuario" id="clave" value="" placeholder="Contraseña">
+            </div>
+
+            <div>
+                <label class="terminos" for="terminos">Terminos y Condiciones</label>
+                <input type="checkbox" id="terminos" name="terminos" required>
+            </div>
+
+            <div>
+                <a class="enlaceRegistro" href="./login.html">"Ya tengo cuenta"</a>
+            </div>
+
+            <button class="botonAcceso" type="submit">Enviar</button>
+        </form>
     </main>
 
-    <footer class="indexFooter">
+    <footer class="piePagina">
         <h3>TP integrador Udesa Silvestre Fernandez Sasso, Julia Olguin, Jeronimo Zotta</h3>
     </footer>
    
