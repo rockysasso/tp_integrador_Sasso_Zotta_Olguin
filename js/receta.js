@@ -5,7 +5,7 @@ let id = queryStringObj.get('id');
 
 let detalle = document.querySelector(".detalleReceta");
 
-fetch('https://dummyjson.com/recipes')
+fetch('https://dummyjson.com/recipes?limit=100&skip=0')
 .then(res => res.json())
 .then(function(data){
    const receta = data.recipes[id - 1]
