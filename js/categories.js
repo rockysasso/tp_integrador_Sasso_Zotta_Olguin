@@ -7,7 +7,7 @@ fetch('https://dummyjson.com/recipes/tags')
     
     for (let i = 0; i < data.length; i++) {
       let tag = data[i];  
-      categories += `<a href="categories.html?tags=${tag}" target="_blank">${tag}</a>, 
+      categories += `<a href="category.html?tags=${tag}" target="_blank">${tag}</a>
       <br>
       `;
 
