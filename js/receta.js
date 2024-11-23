@@ -1,11 +1,11 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString);
 let id = queryStringObj.get('id');
-console.log(id)
+
 
 let detalle = document.querySelector(".detalleReceta");
 
-fetch('https://dummyjson.com/recipes')
+fetch('https://dummyjson.com/recipes?limit=100&skip=0')
 .then(res => res.json())
 .then(function(data){
    const receta = data.recipes[id - 1]
@@ -28,7 +28,7 @@ fetch('https://dummyjson.com/recipes')
     let categoriasLinks = '';
     for (let i = 0; i < receta.tags.length; i++) {
         let tag = receta.tags[i];
-        categoriasLinks += `<a href="categories.html?tags=${tag}" target="_blank">${tag}</a>, `;
+        categoriasLinks += `<a href="category.html?tags=${tag}" target="_blank">${tag}</a>, `;
       
     }
     
