@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header class="indexHeader">
@@ -12,9 +18,12 @@
             <h3>Digital Foods</h3>
         </section>
         <form method= "get" class="search-form" action="./search-results.html">
-            <input type="text" name="buscador" id="buscador" class="search-form" placeholder="Escribe tu busqueda: ">
-            <button type="submit" class="message-error">ENVIAR</button>
+            <input type="text" name="buscador" id="buscador" placeholder="Escribe tu busqueda: ">
+            <button type="submit">ENVIAR</button>
         </form> 
+
+        <div class = "errorMessageEmpty"></div>
+        <div class = "errorMassageLength"></div>
 
         <section class="indexUtilidades">
             <div class="indexUtilidadesHamburguer">
@@ -36,10 +45,12 @@
             </ul>
         </section>
     </header>
+
+
+
+
     <footer class="indexFooter">
         <h3>TP integrador Udesa Silvestre Fernandez Sasso, Julia Olguin, Jeronimo Zotta</h3>
     </footer>
-    <script src="../js/search-results.js"></script>
 </body>
-
 </html>

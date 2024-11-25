@@ -251,3 +251,27 @@ color: black;
 
 }
 
+.search-result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #6F9283;
+}
+
+.search-resultsLogo {
+    color: black;
+    display: flex;
+    align-items: center;
+}
+
+.search-resultsLogo {
+    width: 100px;
+}
+
+.search-resultsPiePagina {
+    color: black;
+    background-color: #6F9283;
+    text-align: center;
+    padding: 10px;}
