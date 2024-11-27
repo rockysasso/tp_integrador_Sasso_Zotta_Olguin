@@ -277,11 +277,91 @@ color: black;
     color: black;
     background-color: #6F9283;
 
-.search-result-results-container {
-        width: 50%;
-        height: 500px;
-        border-style: solid;
-        border-width: 3px;
-        border-color: black;
-        margin-top: 10%;
+}
+
+.categoriasHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #6F9283;
+}
+
+.categoriasHeader img {
+    width: 80px;
+}
+
+.categoriasHeader h3 {
+    color: black;
+}
+
+/* Estilo del buscador */
+.categoriasHeader .search-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.categoriasHeader .search-form input {
+    padding: 5px 10px;
+    border: 1px solid #463a30;
+    border-radius: 5px;
+}
+
+.categoriasHeader .search-form button {
+    background-color: #6F9283;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.categoriasHeader .search-form button {
+    background-color: #463a30;
+}
+
+/* Estilo para las categorías */
+.categorias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgba(207, 207, 207, 0.779);
+}
+
+.categorias a {
+    display: block;
+    text-decoration: none;
+    background-color: #6F9283;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+    
+}
+
+
+
+/* Estilo del footer */
+.categoriasFooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6F9283;
+    color: black;
+    padding: 10px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 720px) {
+    .categoriasHeader {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .categorias {
+        flex-direction: column;
+    }
 }
