@@ -14,16 +14,17 @@
 <body>
     <header class="indexHeader">
         <section class="indexLogo">
-            <img src="../img/logo_tp_Integrador-removebg-preview.png" alt="logo">
+            <a href="./home.html">
+                <img src="../img/logo_tp_Integrador-removebg-preview.png" alt="logo">
+            </a>                
             <h3>Digital Foods</h3>
         </section>
         <form method= "get" class="search-form" action="./search-results.html">
             <input type="text" name="buscador" id="buscador" placeholder="Escribe tu busqueda: ">
             <button type="submit">ENVIAR</button>
+            <div class = "errorMessageEmpty"></div>
+            <div class = "errorMessageLength"></div>
         </form> 
-
-        <div class = "errorMessageEmpty"></div>
-        <div class = "errorMassageLength"></div>
 
         <section class="indexUtilidades">
             <div class="indexUtilidadesHamburguer">
@@ -53,7 +54,10 @@
     
             <div>
                 <input type="email" name="correoUsuario" id="correo" value="" placeholder="Correo electrónico" >
+<<<<<<< HEAD
                 
+=======
+>>>>>>> 127140cd11ad3130cad6f735dc0ba60ae44db296
             </div>
     
             <div>
@@ -73,5 +77,6 @@
     </footer>
     
     <script src="../js/index.js"></script>
+    <script src="../js/login.js"></script>
     </body>
     </html>

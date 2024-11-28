@@ -14,16 +14,17 @@
 <body>
     <header class="indexHeader">
         <section class="indexLogo">
-            <img src="../img/logo_tp_Integrador-removebg-preview.png" alt="logo">
+            <a href="./home.html">
+                <img src="../img/logo_tp_Integrador-removebg-preview.png" alt="logo">
+            </a>                
             <h3>Digital Foods</h3>
         </section>
         <form method= "get" class="search-form" action="./search-results.html">
             <input type="text" name="buscador" id="buscador" placeholder="Escribe tu busqueda: ">
             <button type="submit">ENVIAR</button>
+            <div class = "errorMessageEmpty"></div>
+            <div class = "errorMessageLength"></div>
         </form> 
-
-        <div class = "errorMessageEmpty"></div>
-        <div class = "errorMassageLength"></div>
 
         <section class="indexUtilidades">
             <div class="indexUtilidadesHamburguer">
@@ -47,7 +48,11 @@
     </header>
 
     <main class="formularioPrincipal">
+<<<<<<< HEAD
         <form class="formularioAcceso" action="../html/home.html" method="get">
+=======
+        <form class="formularioAcceso" action="../html/login.html" method="get">
+>>>>>>> 127140cd11ad3130cad6f735dc0ba60ae44db296
 
             <h1 class="tituloAcceso">Registrate</h1>
 
@@ -56,7 +61,7 @@
             </div>
 
             <div>
-                <input type="password" name="claveUsuario" id="clave" value="" placeholder="Contraseña">
+                <input type="password" name="contraseñaUsuario" id="contraseña" value="" placeholder="Contraseña">
             </div>
 
             <div>
@@ -69,6 +74,9 @@
             </div>
 
             <button class="botonAcceso" type="submit">Enviar</button>
+            
+            <div class = "correoError"></div>
+            <div class = "contraseñaError"></div>
         </form>
     </main>
 
@@ -77,5 +85,6 @@
     </footer>
    
     <script src="../js/index.js"></script>
+    <script src="../js/register.js"></script>
 </body>
 </html>
