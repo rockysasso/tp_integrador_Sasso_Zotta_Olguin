@@ -6,7 +6,7 @@ let errorMessageEmpty = document.querySelector (".errorMessageEmpty");
 let errorMessageLength = document.querySelector (".errorMessageLength");
 
 let emptyErrorMessage = "El campo no puede estar vacio";
-let errorFormLength = " debe ingresar al menos 3 caracteres";
+let errorFormLength = "Debe ingresar al menos 3 caracteres";
 
 let erroresBool = false;
 
