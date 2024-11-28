@@ -48,7 +48,7 @@
     </header>
 
     <main class="formularioPrincipal">
-        <form class="formularioAcceso" action="../home.html" method="get">
+        <form class="formularioAcceso" action="../html/login.html" method="get">
 
             <h1 class="tituloAcceso">Registrate</h1>
 
@@ -57,7 +57,7 @@
             </div>
 
             <div>
-                <input type="password" name="claveUsuario" id="clave" value="" placeholder="Contraseña">
+                <input type="password" name="contraseñaUsuario" id="contraseña" value="" placeholder="Contraseña">
             </div>
 
             <div>
@@ -70,6 +70,9 @@
             </div>
 
             <button class="botonAcceso" type="submit">Enviar</button>
+            
+            <div class = "correoError"></div>
+            <div class = "contraseñaError"></div>
         </form>
     </main>
 
@@ -78,5 +81,6 @@
     </footer>
    
     <script src="../js/index.js"></script>
+    <script src="../js/register.js"></script>
 </body>
 </html>
