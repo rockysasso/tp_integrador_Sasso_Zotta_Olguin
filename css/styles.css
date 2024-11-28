@@ -296,7 +296,7 @@ color: black;
     color: black;
 }
 
-/* Estilo del buscador */
+
 .categoriasHeader .search-form {
     display: flex;
     align-items: center;
@@ -321,7 +321,7 @@ color: black;
     background-color: #463a30;
 }
 
-/* Estilo para las categorías */
+
 .categorias {
     display: flex;
     flex-wrap: wrap;
@@ -344,7 +344,7 @@ color: black;
 
 
 
-/* Estilo del footer */
+
 .categoriasFooter {
     display: flex;
     justify-content: center;
@@ -354,7 +354,32 @@ color: black;
     padding: 10px;
 }
 
-/* Diseño responsivo */
+.resultados a {
+    display: block;
+    text-decoration: none;
+    background-color: #6F9283;
+    color: black;
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 10px;
+
+}
+.resultados{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: rgba(207, 207, 207, 0.779);
+    
+}
+.resultados img {
+    width: 80px;
+    
+}
+
+
 @media (max-width: 720px) {
     .categoriasHeader {
         flex-direction: column;
