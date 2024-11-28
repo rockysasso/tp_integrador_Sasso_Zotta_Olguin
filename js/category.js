@@ -3,7 +3,7 @@ let queryStringObj = new URLSearchParams(queryString);
 let tag = queryStringObj.get('tags'); 
 
 
-  let listaRecetas = document.querySelector(".contenedorCategorias");
+  let listaRecetas = document.querySelector(".indexRecepieContainer");
 
   fetch(`https://dummyjson.com/recipes/tag/${tag}`)
     .then(res => res.json()) 
